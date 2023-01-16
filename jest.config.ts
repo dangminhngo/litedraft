@@ -6,7 +6,7 @@ const createJestConfig = nextJest({
 })
 
 const config: Config = {
-  collectCoverageFrom: ['**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
+  collectCoverageFrom: ['__tests__/**/*.{js,jsx,ts,tsx}', '!**/*.d.ts', '!**/node_modules/**'],
   verbose: true,
   rootDir: './',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],

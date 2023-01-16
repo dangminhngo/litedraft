@@ -6,7 +6,7 @@ describe('Home page', () => {
 
   it('renders a heading with label', () => {
     const heading = screen.getByRole('heading', {
-      name: /docs/i,
+      name: /nextjs application/i,
     })
     expect(heading).toBeInTheDocument()
   })
